@@ -1,0 +1,7 @@
+<h1>What do you think about my blog?</h1>
+<%= simple_form_for @comment do |f| %>
+  <%= f.input :text %>
+  <%= f.input :author %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-danger' %>
+<% end %>
