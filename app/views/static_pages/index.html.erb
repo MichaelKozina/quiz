@@ -28,8 +28,11 @@
     </p>
 
   <h3>What do you think about my blog?</h3>
-    <p>
-      <%= @comment  %>
-    </p>
+  <%= simple_form_for @comment do |f| %>
+    <%= f.input :text %>
+    <%= f.input :author %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-danger' %>
+  <% end %>
     
 </body>
